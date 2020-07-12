@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{D725CF8C-9840-4B9E-8055-94EFADB02DDB}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TankServer/script/net/MsgBase.cs">
+    <Files>
+      <File FileName="TankServer/Program.cs" Line="17" Column="12" />
+      <File FileName="TankServer/script/db/DbManager.cs" />
+      <File FileName="TankServer/script/net/MsgBase.cs" Line="4" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TankServer" expanded="True">
+            <Node name="TankServer" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+              <Node name="script" expanded="True">
+                <Node name="db" expanded="True" />
+                <Node name="net" expanded="True">
+                  <Node name="MsgBase.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.TankServer PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
