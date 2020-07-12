@@ -1,2 +1,1 @@
-# UnityTraining
-一些关于unity的探索
+3d单机版第一人称射击游戏
