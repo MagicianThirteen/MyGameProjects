@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bubble.cs" />
     <Compile Include="Assets\Scripts\CreateBubbles.cs" />
+    <Compile Include="Assets\Scripts\Shine.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>/Users/Magician/Documents/GitHub/MyGameProjects/完整作品/捕鱼游戏/EnjoyFishing/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

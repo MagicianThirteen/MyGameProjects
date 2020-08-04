@@ -5,7 +5,7 @@ using UnityEngine;
 public class Bubble : MonoBehaviour
 {
     public float moveSpeed;
-    public bool isGameBubble;
+    public bool isGameBubble;//是否关闭泡泡效果
     // Start is called before the first frame update
     void Start()
     {
