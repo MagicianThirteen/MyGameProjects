@@ -25,6 +25,7 @@ public class Shine : MonoBehaviour
         transform.Rotate(Vector3.forward * rotateSpeed * Time.deltaTime);
         if (isShow)
         {
+            //这里都写1，和都写0没区别啊？
             image.color -= new Color(1, 1, 1, speed * Time.deltaTime);
             if (image.color.a <= 0.2)
             {
