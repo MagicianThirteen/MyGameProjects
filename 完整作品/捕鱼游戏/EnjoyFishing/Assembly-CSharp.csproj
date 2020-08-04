@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Bubble.cs" />
     <Compile Include="Assets\Scripts\CreateBubbles.cs" />
+    <Compile Include="Assets\Scripts\LoadingGame.cs" />
     <Compile Include="Assets\Scripts\Shine.cs" />
     <Compile Include="Assets\Scripts\StartGame.cs" />
     <Reference Include="Unity.Timeline.Editor">
