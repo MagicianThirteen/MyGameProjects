@@ -2,15 +2,15 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LoadingGame.cs">
     <Files>
       <File FileName="Assets/Scripts/CreateBubbles.cs" Line="21" Column="25" />
-      <File FileName="Assets/Scripts/Bubble.cs" Line="26" Column="6" />
-      <File FileName="Assets/Scripts/Shine.cs" Line="19" Column="39" />
-      <File FileName="Assets/Scripts/StartGame.cs" Line="22" Column="35" />
-      <File FileName="Assets/Scripts/LoadingGame.cs" Line="29" Column="31" />
+      <File FileName="Assets/Scripts/Bubble.cs" />
+      <File FileName="Assets/Scripts/Shine.cs" />
+      <File FileName="Assets/Scripts/StartGame.cs" />
+      <File FileName="Assets/Scripts/LoadingGame.cs" Line="17" Column="26" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="2c699002-b0c8-4ca1-bb28-481b4f582944" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="638b403c-0911-46d8-9b96-88d973755037" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -4,37 +4,55 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 /// <summary>
-/// 加载游戏场景，平滑的加载到底的方式加载
+/// 脚本作用：加载游戏场景，平滑的加载到底的方式加载
+/// 脚本位置：挂在1号场景的，滑动条上
 /// </summary>
 public class LoadingGame : MonoBehaviour
 {
+	private AsyncOperation op;
+	private Slider loadSlider;
+	private int toProgress = 0;
+	private int displayProgress = 0;
+	
+	void Start()
+	{
+		loadSlider = GetComponent<Slider>();
+		StartCoroutine(LoadGame(2));
+	}
 
-    private Slider loadSlider;
-    private float displayProgress = 0;//负责显示的数值
-    private float toProgress = 0;//实际要追的数值
-    public float lerpSpeed = 1000f;
-    private AsyncOperation op;
-    // Start is called before the first frame update
-    void Start()
+	IEnumerator LoadGame(int index)
     {
-        loadSlider = GetComponent<Slider>();
-        op = SceneManager.LoadSceneAsync(2);
+		op = SceneManager.LoadSceneAsync(index);
+		op.allowSceneActivation = false;
+		yield return op;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-       
-        toProgress = (int)op.progress * 100;
-        Debug.Log(toProgress);
-        if (displayProgress != toProgress)
+	void Update()
+	{
+        if (op == null)
         {
-            displayProgress = Mathf.Lerp(displayProgress, toProgress,Time.deltaTime*lerpSpeed);
-           // Debug.Log(displayProgress);
-            loadSlider.value = displayProgress / 100;
+			return;
         }
-    }
+		if (op.progress < 0.9f)
+        {
+			toProgress = (int)(op.progress*100);
+			
+        }
+        else
+        {
+			toProgress = 100;
+        }
 
-    
-    
+        if (displayProgress < toProgress)
+        {
+			displayProgress++;
+			
+        }
+		loadSlider.value = displayProgress / 100f;
+		if (displayProgress == 100)
+        {
+			op.allowSceneActivation = true;
+        }
+		
+	}	
 }

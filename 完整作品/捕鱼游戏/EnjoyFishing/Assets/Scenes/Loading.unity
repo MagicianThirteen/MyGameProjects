@@ -784,6 +784,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98c0474bfc31c425ba17ac9f580f8265, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  processBar: {fileID: 1768612900}
 --- !u!114 &1768612900
 MonoBehaviour:
   m_ObjectHideFlags: 0
